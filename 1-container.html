@@ -12,15 +12,9 @@
       }
 
       .container {
-        /* height: 1200px; */
         background-color: rgb(181, 216, 238);
         padding: 15px;
         display: flex;
-        /* justify-content: space-around;
-        align-items: flex-start; */
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-        align-content: content;
       }
 
       .box {
@@ -29,36 +23,38 @@
         margin: 30px;
         color: beige;
         font-size: 25px;
+        flex-grow: 1;
       }
       #box-1 {
         /* font-size: 50px; */
+        align-self: stretch;
+      }
+
+      #box-2 {
+        align-self: flex-start;
+        /* order: 5; */
       }
 
       #box-3 {
         height: 100px;
+        /* order: 1; */
+        align-self: flex-end;
+        flex-grow: 3;
+      }
+      #box-4{
+        /* order: 1; */
+
       }
       #box-5 {
+        
         height: 200px;
+        /* order: -1; */
+
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="box" id="box-1">Box 1</div>
-      <div class="box" id="box-2">Box 2</div>
-      <div class="box" id="box-3">Box 3</div>
-      <div class="box" id="box-4">Box 4</div>
-      <div class="box" id="box-5">Box 5</div>
-      <div class="box" id="box-1">Box 1</div>
-      <div class="box" id="box-2">Box 2</div>
-      <div class="box" id="box-3">Box 3</div>
-      <div class="box" id="box-4">Box 4</div>
-      <div class="box" id="box-5">Box 5</div>
-      <div class="box" id="box-1">Box 1</div>
-      <div class="box" id="box-2">Box 2</div>
-      <div class="box" id="box-3">Box 3</div>
-      <div class="box" id="box-4">Box 4</div>
-      <div class="box" id="box-5">Box 5</div>
       <div class="box" id="box-1">Box 1</div>
       <div class="box" id="box-2">Box 2</div>
       <div class="box" id="box-3">Box 3</div>
